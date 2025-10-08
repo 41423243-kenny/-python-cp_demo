@@ -1,7 +1,108 @@
-<html>
-<head>
-<meta http-equiv="refresh" content="0; url=content/index.html" />
-</head>
-<body>
-</body>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>什麼是 git, GitHub, gist 與 cmsimde? 如何使用這些工具？為什麼要使用這些工具？</section>
+				
+				<section>
+					<h2>什麼是git?<h2>
+					<p><p style="font-size:28px;">git是一種分散式版控制系統，你每一次改版都會留紀錄，方便回頭去看整個修改歷程方便比較各個版本，						新版本有問題也方便直接回朔到之前穩定的版本，然後再去修改。
+				</section>
+					
+				<section>
+					<h2>要如何使用git?<h2>
+					<p><p style="font-size:28px;">先建立.git/隱藏資料夾，假如第一次使用要設定使用者名稱和信箱，然後把檔案加入版本控制，再來建立						提交，這東西就有點像我們的遊戲存檔點，建立分支 & 切換，目的是讓大家可以同時操作，在把 GitHub 專案拉下來，就是把專案下載下						來，使他跟git保持連線。儲存有兩種clone是用於第一次下載，pull是更新下載。
+					最後更新本地專案，就是更新為最新的東西。
+				</section>
+
+				<section>
+					<h2>為何要使用git?<h2>
+					<p><p style="font-size:28px;">使用的原因有很多，例如：保留歷史版本，不怕電腦突然當機檔案什麼都沒了，可能這時會想這跟普通的存					檔差在哪，git只要一行指令就可完成，並保留每一個版本。還有可以多人同時編輯，就不用浪費時間等別人，就不用像之前檔案傳來傳						去，很亂很容易搞錯，git可以看到誰改了什麼，看到有錯誤的地方可以馬上告訴對方，也可以遠端備份在GitHub，他就像雲端的功用一樣。
+				</section>
+
+				<section>
+					<h2>什麼是GitHub?<h2>
+					<p><p style="font-size:28px;">GitHub就像是我們的雲端一樣，只不過他是專門用來儲存程式碼的雲端。專門用於存放和管理用git做出的						專案。
+				</section>
+
+				<section>
+					<h2>要如何使用GitHub?<h2>
+					<p><p style="font-size:28px;">首先建立一個帳號，然後建立一個遠端 Repository，進入Repository並上傳你所需的資料，使用git作為搭						配來設定使用者資料、複製專案和儲存修改。
+				</section>
+
+				<section>
+					<h2>為何要使用GitHub?<h2>
+					<p><p style="font-size:28px;">可以回溯到任意版本，避免誤刪或覆蓋，可多人同時操作、參考來自世界各地開發者的專案和架設個人網						站。
+				</section>
+
+				<section>
+					<h2>什麼是gist?<h2>
+					<p><p style="font-size:28px;">gist有點像迷你版的Repository，是一個能永久保存、公開分享的雲端記事本，但通常是用來記錄較小的內						容或資訊。
+				</section>
+
+				<section>
+					<h2>要如何使用gist?<h2>
+					<p><p style="font-size:28px;">先建立一個新的gist，選擇要公開還是私人，建立完會產生一個網址，網頁就可以顯示你的程式碼。或者也					可以使用git來操作，先取得連結後下載下來修改，修改完回傳即可。
+				</section>
+
+				<section>
+					<h2>為何要使用gist?<h2>
+					<p><p style="font-size:28px;">不用建立完整的Repository，極短的時間內就可上傳，並產生一個分享連結，也適合一些短程式或者教學影						片。
+				</section>
+
+				<section>
+					<h2>什麼是cmsimde?<h2>
+					<p><p style="font-size:28px;">是以 Python + Flask 作為後端框架來開發的內容管理系統，也是一套 Web-based Content Management 						System（網際內容管理系統），用來在網頁上管理、編輯、發布內容。
+				</section>
+
+				<section>
+					<h2>如何使用cmsimde?<h2>
+					<p><p style="font-size:28px;">從 GitHub 複製 cmsimde 的原始碼倉庫，安裝 Python 套件與環境										(flask、faask_cors、bs4、lxml 、pelican、markdown、leo、pyopenssl)，最後啟動伺服器與運行。
+				</section>
+
+				<section>
+					<h2>為何要使用cmsimde?<h2>
+					<p><p style="font-size:28px;">可以直接透過瀏覽器修改文字、圖片、影片，可支援、文字、圖片、影片、連結程式碼片段（支援語法上						色）Markdown 文件3D 模型、能即時修改、線上展示。
+				</section>
+
+
+
+
+
+	
+
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
