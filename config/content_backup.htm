@@ -818,7 +818,16 @@ window.onload = function() {
 <h2>41423225</h2>
 <h2>41423234</h2>
 <p>操作影片:<a href="https://youtu.be/jINgz5qdXyg">https://youtu.be/jINgz5qdXyg</a></p>
-<p>操作心得:在操作期間學到很多東西，如何使用可攜，利用電腦錄製畫面，這些都是大學才接觸的，所以在一開始使用時有很多的地方不懂，但感謝老師和同學的教導，讓我學會了這些東西。</p><h2>41423254</h2>
+<p>操作心得:在操作期間學到很多東西，如何使用可攜，利用電腦錄製畫面，這些都是大學才接觸的，所以在一開始使用時有很多的地方不懂，但感謝老師和同學的教導，讓我學會了這些東西。</p>
+<p>HW:</p>
+<p>around1</p>
+<p>from robot_lib import World, AnimatedRobot<br/>w = World(10, 10)<br/>r = AnimatedRobot(w, 1, 1)<br/>for i in range(4):<br/> r.move(9)<br/> r.turn_left()</p>
+<p>around2</p>
+<p>from robot_lib import World, AnimatedRobot<br/>w = World(10, 10)<br/>r = AnimatedRobot(w, 4, 1)<br/>r.move(6)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(5)<br/>r.turn_left()<br/>r.turn_left()<br/>r.turn_left()<br/>r.move(5)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(9)<br/>r.turn_left()<br/>r.move(3)</p>
+<p>around3</p>
+<p>from robot_lib import World, AnimatedRobot<br/>w = World(10, 10)<br/>r = AnimatedRobot(w, 4, 1)<br/>def turn_right():<br/> r.turn_left()<br/> r.turn_left()<br/> r.turn_left()<br/>r.turn_left()<br/>r.move(1)<br/>turn_right()<br/>r.move(2)<br/>turn_right()<br/>r.move(1)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(5)<br/>turn_right()<br/>r.move(5)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(9)<br/>r.turn_left()<br/>r.move(3)</p>
+<p>around4</p>
+<p>from robot_lib import World, AnimatedRobot<br/>w = World(10, 10)<br/>r = AnimatedRobot(w, 4, 1)<br/>def turn_right():<br/> r.turn_left()<br/> r.turn_left()<br/> r.turn_left()<br/>r.turn_left()<br/>r.turn_left()<br/>r.move(1)<br/>turn_right()<br/>r.move(2)<br/>turn_right()<br/>r.move(3)<br/>turn_right()<br/>r.move(2)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(5)<br/>turn_right()<br/>r.move(5)<br/>r.turn_left()<br/>r.move(4)<br/>r.turn_left()<br/>r.move(9)<br/>r.turn_left()<br/>r.move(3)</p><h2>41423254</h2>
 <p></p>
 <h2>41423243(組長)</h2>
 <p>期末作業 youtube 影片連結： <a href="https://youtu.be/aGkrWKNErOM"> https://youtu.be/aGkrWKNErOM </a></p>
@@ -830,7 +839,12 @@ if (location.hostname === '127.0.0.1' || location.hostname === 'localhost') {
 }" style="display: inline-block; padding: 10px 16px; background: #1f6feb; color: white; text-decoration: none; border-radius: 6px; cursor: pointer;"> 👉 點我下載 / 開啟 Word 報告 </a></p>
 <p>點點小遊戲（可自訂點點數量）： <a href="https://five-4qcg.onrender.com">連結</a></p>
 <p></p>
-<h3>學習心得報告</h3><h1>Project</h1>
+<h3>學習心得報告</h3>
+<p></p>
+<p>    這個課程一開始我先了解到網頁不是只有用JavaScript寫，還可以用brython導入python來寫網頁，接著接觸到github，雖然之前有使用過，但並沒有項課程內容一樣自己管理個人倉儲與小組倉儲，也了解未來我們要面對的可能是各個地方共同合作，或是我們市面上看到的一些產品背後的技巧等等。</p>
+<p>    這堂課我學會怎麼將倉儲上的資料載下來並使用可攜執行，中間的一些管道設定，例如:如果網路是純ipv6要怎麼連到github、我有多個倉儲要上傳我該怎麼設定、各種git指令的應用等，以及了解靜態資源是什麼等等，並且也將點點小遊戲部屬到雲端伺服器，我是先將遊戲上傳至我的另外一個倉儲，並且新增一些讓伺服器啟動時告訴他要下載那些套件。</p>
+<p>    我在我自己的網站新增東西的時候，剛開始我連怎麼操作都不太清楚，一直在自己嘗試各種東西，我也把網站改壞掉好多次，剛開始幾個星期，我甚至不知道有pages這個東西，當時就在想我要怎麼讓別人看的到我的網站，後來問ai才知道github上有能直接幫你發布你的網站內容，一開始我在近端改完東西上傳是用指令上傳，所以沒有先轉靜態，再用pages的時候想說我改的東西呢，怎麼看不到，後來去查資料，才知道pages是抓靜態資源，我在近端上看到的畫面不是靜態資源，從那時候我才開始每次改完都轉靜態，我的網站才終於正常。</p>
+<p>    後來在我git pull我組員改過的倉儲時，我發現有一大堆垃圾文件，有的是每一次開啟網站框架時會生成的東西，導致說倉儲資料有很多沒必要的檔案，所以我去詢問ai，然後新增了一個過濾的檔案，內容大致是某些類型的檔案git add .不要理他，這樣倉儲資料才不會爆炸。</p><h1>Project</h1>
 <p>既存技術:</p>
 <p style="padding-left: 30px;"><a href="https://github.com/scrum-1/respysive-slide">https://github.com/scrum-1/respysive-slide</a></p>
 <p>專案簡介：非同步分散式 Reveal.js 協同簡報編輯系統</p>
